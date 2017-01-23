@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87B5998B66C545CEEEDD11B8 /* Pods_HelloAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FC6BBACDE8B8B229FB3F68C /* Pods_HelloAlamofire.framework */; };
 		A5E8D0B81E1F64F400BD4B0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8D0B71E1F64F400BD4B0F /* AppDelegate.swift */; };
 		A5E8D0BA1E1F64F400BD4B0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E8D0B91E1F64F400BD4B0F /* ViewController.swift */; };
 		A5E8D0BD1E1F64F400BD4B0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E8D0BB1E1F64F400BD4B0F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FC6BBACDE8B8B229FB3F68C /* Pods_HelloAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EA67CFA208E4B77DE0E2F9 /* Pods-HelloAlamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAlamofire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAlamofire/Pods-HelloAlamofire.debug.xcconfig"; sourceTree = "<group>"; };
 		A5E8D0B41E1F64F400BD4B0F /* HelloAlamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloAlamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E8D0B71E1F64F400BD4B0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5E8D0B91E1F64F400BD4B0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		A5E8D0BE1E1F64F400BD4B0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5E8D0C11E1F64F500BD4B0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5E8D0C31E1F64F500BD4B0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D24F94B7706F2327432C106A /* Pods-HelloAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloAlamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-HelloAlamofire/Pods-HelloAlamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B5998B66C545CEEEDD11B8 /* Pods_HelloAlamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9F6351740E79F66D410EB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FC6BBACDE8B8B229FB3F68C /* Pods_HelloAlamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5E8D0AB1E1F64F400BD4B0F = {
 			isa = PBXGroup;
 			children = (
 				A5E8D0B61E1F64F400BD4B0F /* HelloAlamofire */,
 				A5E8D0B51E1F64F400BD4B0F /* Products */,
+				F8181F014E7876B48B0EE281 /* Pods */,
+				2F9F6351740E79F66D410EB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = HelloAlamofire;
 			sourceTree = "<group>";
 		};
+		F8181F014E7876B48B0EE281 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90EA67CFA208E4B77DE0E2F9 /* Pods-HelloAlamofire.debug.xcconfig */,
+				D24F94B7706F2327432C106A /* Pods-HelloAlamofire.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5E8D0C61E1F64F500BD4B0F /* Build configuration list for PBXNativeTarget "HelloAlamofire" */;
 			buildPhases = (
+				91D375B3A014176516235345 /* [CP] Check Pods Manifest.lock */,
 				A5E8D0B01E1F64F400BD4B0F /* Sources */,
 				A5E8D0B11E1F64F400BD4B0F /* Frameworks */,
 				A5E8D0B21E1F64F400BD4B0F /* Resources */,
+				C44D2B446E383A7DEAB3486E /* [CP] Embed Pods Frameworks */,
+				9212B2409B4D07EAB2A43CEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +123,7 @@
 				TargetAttributes = {
 					A5E8D0B31E1F64F400BD4B0F = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = WC222PPEMH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -130,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91D375B3A014176516235345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9212B2409B4D07EAB2A43CEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAlamofire/Pods-HelloAlamofire-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C44D2B446E383A7DEAB3486E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloAlamofire/Pods-HelloAlamofire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A5E8D0B01E1F64F400BD4B0F /* Sources */ = {
@@ -203,7 +279,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -246,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -256,8 +332,11 @@
 		};
 		A5E8D0C71E1F64F500BD4B0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90EA67CFA208E4B77DE0E2F9 /* Pods-HelloAlamofire.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WC222PPEMH;
 				INFOPLIST_FILE = HelloAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tachyonic.HelloAlamofire;
@@ -268,8 +347,11 @@
 		};
 		A5E8D0C81E1F64F500BD4B0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D24F94B7706F2327432C106A /* Pods-HelloAlamofire.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WC222PPEMH;
 				INFOPLIST_FILE = HelloAlamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tachyonic.HelloAlamofire;
@@ -297,6 +379,7 @@
 				A5E8D0C81E1F64F500BD4B0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

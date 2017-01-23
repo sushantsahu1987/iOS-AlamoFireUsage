@@ -7,18 +7,51 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        requestTopRatedMovies()
+    }
+    
+    
+    @IBAction func postButtonClick(_ sender: UIButton) {
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func getButtonClick(_ sender: UIButton) {
+        requestTopRatedMovies()
     }
+    
+    func requestTopRatedMovies() -> Void {
+        
+//        https://api.themoviedb.org/3/movie/top_rated?api_key=xxx&language=en-US&page=1
+//        https://image.tmdb.org/t/p/w500/xBKGJQsAIeweesB79KC89FpBrVr.jpg
+        
+        print("request top rated movies !!")
+        
+        let url = "https://api.themoviedb.org/3/movie/top_rated"
+        let params: Parameters = ["api_key":"xxx"]
+        Alamofire.request(url,parameters:params).responseJSON{ response in
+            print("Response is \(response.result.value)")
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 }
