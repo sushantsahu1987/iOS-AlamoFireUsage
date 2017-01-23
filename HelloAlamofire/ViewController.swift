@@ -15,28 +15,28 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        requestTopRatedMovies()
-    }
-    
-    
-    @IBAction func postButtonClick(_ sender: UIButton) {
-        
     }
 
-    @IBAction func getButtonClick(_ sender: UIButton) {
+    
+    
+    @IBAction func onGetButtonClick(_ sender: UIButton) {
         requestTopRatedMovies()
     }
+    
+    
+    @IBAction func onPostButtonClick(_ sender: UIButton) {
+        
+    }
+    
     
     func requestTopRatedMovies() -> Void {
         
-//        https://api.themoviedb.org/3/movie/top_rated?api_key=xxx&language=en-US&page=1
-//        https://image.tmdb.org/t/p/w500/xBKGJQsAIeweesB79KC89FpBrVr.jpg
+        //http://localhost:3000/posts
         
         print("request top rated movies !!")
         
-        let url = "https://api.themoviedb.org/3/movie/top_rated"
-        let params: Parameters = ["api_key":"xxx"]
-        Alamofire.request(url,parameters:params).responseJSON{ response in
+        let url = "http://localhost:3000/posts"
+        Alamofire.request(url).responseJSON{ response in
             print("Response is \(response.result.value)")
         }
         

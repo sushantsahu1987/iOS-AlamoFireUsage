@@ -39,7 +39,7 @@
                                 </constraints>
                                 <state key="normal" title="GET"/>
                                 <connections>
-                                    <action selector="getButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TA5-V1-nz6"/>
+                                    <action selector="onGetButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8g-G7-Vmp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-oA-gg4">
@@ -50,7 +50,7 @@
                                 </constraints>
                                 <state key="normal" title="POST"/>
                                 <connections>
-                                    <action selector="postButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xLb-EH-SSk"/>
+                                    <action selector="onPostButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gB2-32-YsH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,11 +65,6 @@
                             <constraint firstItem="ay4-1M-94D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x1z-3O-Yxn"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="getButton" destination="hBC-co-6Kx" id="xLW-mf-Nur"/>
-                        <outlet property="postButton" destination="AhV-oA-gg4" id="KT6-7G-pvy"/>
-                        <outlet property="textLabel" destination="ay4-1M-94D" id="hYb-Nm-aYh"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
