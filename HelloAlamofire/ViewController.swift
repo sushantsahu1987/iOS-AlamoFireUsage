@@ -17,10 +17,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
 
-    
+    var postUrl = "http://localhost:3000/posts"
+
     
     @IBAction func onGetButtonClick(_ sender: UIButton) {
         makeGetRequest()
+    }
+    
+    @IBAction func onPutButtonClick(_ sender: UIButton) {
+        makePutRequest()
+    }
+    
+    
+    @IBAction func onDeleteButtonClick(_ sender: UIButton) {
+        makeDeleteRequest()
     }
     
     
@@ -31,12 +41,8 @@ class ViewController: UIViewController {
     
     func makeGetRequest() -> Void {
         
-        //http://localhost:3000/posts
-        
         print("request => Get")
-        
-        let url = "http://localhost:3000/posts"
-        Alamofire.request(url).responseJSON{ response in
+        Alamofire.request(postUrl).responseJSON{ response in
             print("Response is \(response.result.value)")
         }
         
@@ -45,7 +51,6 @@ class ViewController: UIViewController {
     func makePostRequest() -> Void {
         
         print("request => Post")
-        let url = "http://localhost:3000/posts"
         
         let params:Parameters = [
             "id":2,
@@ -53,12 +58,49 @@ class ViewController: UIViewController {
             "author":"Sushant Sahu"
         ]
         
-        
-        Alamofire.request(url,method:.post,parameters:params).responseJSON {
+        Alamofire.request(postUrl,method:.post,parameters:params).responseJSON {
             response in print("response is \(response.result.value)")
         }
         
     }
+    
+    
+    func makePutRequest() -> Void {
+        
+        print("request => Put")
+        
+        postUrl = postUrl.appending("/3")
+        
+        let params:Parameters = [
+            "id":3,
+            "title":"Lone warrior",
+            "author":"Sushant Sahu"
+        ]
+        
+        let request = Alamofire.request(postUrl, method:.put, parameters:params)
+        
+            request.responseJSON {
+                response in
+                print("response is \(response.result.value)")
+        }
+
+        
+    }
+    
+    func makeDeleteRequest() -> Void {
+        
+        print("request => Delete")
+        postUrl = postUrl.appending("/2")
+
+        
+        Alamofire.request(postUrl, method:.delete).responseJSON {
+            response in print("response is \(response.result.value)")
+        }
+        
+    }
+    
+    
+    
     
     
     

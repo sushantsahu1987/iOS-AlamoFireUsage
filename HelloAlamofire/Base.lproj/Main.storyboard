@@ -42,6 +42,19 @@
                                     <action selector="onGetButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8g-G7-Vmp"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IqI-fg-lfp">
+                                <rect key="frame" x="16" y="439" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="BBz-QU-6FV"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Qpd-0i-Y4H"/>
+                                    <constraint firstAttribute="height" constant="40" id="fnR-vd-wxN"/>
+                                    <constraint firstAttribute="width" constant="110" id="mVJ-Gb-zqb"/>
+                                </constraints>
+                                <state key="normal" title="PUT"/>
+                                <connections>
+                                    <action selector="onPutButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vib-uP-aAe"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhV-oA-gg4">
                                 <rect key="frame" x="241" y="370" width="110" height="40"/>
                                 <constraints>
@@ -53,13 +66,32 @@
                                     <action selector="onPostButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gB2-32-YsH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Juf-RH-42a">
+                                <rect key="frame" x="241" y="439" width="110" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="5Vc-tP-aFm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="79o-kl-vyt"/>
+                                    <constraint firstAttribute="height" constant="40" id="FbC-tN-Tqu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="G2r-iV-JGL"/>
+                                    <constraint firstAttribute="width" constant="110" id="NoA-UU-Jw3"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="110" id="pfq-GY-9ij"/>
+                                </constraints>
+                                <state key="normal" title="DELETE"/>
+                                <connections>
+                                    <action selector="onDeleteButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNL-or-rXW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Juf-RH-42a" secondAttribute="trailing" constant="8" id="39G-h2-h2n"/>
                             <constraint firstItem="ay4-1M-94D" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="54X-XH-bu4"/>
                             <constraint firstItem="ay4-1M-94D" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ge4-YG-IpQ"/>
+                            <constraint firstItem="IqI-fg-lfp" firstAttribute="top" secondItem="hBC-co-6Kx" secondAttribute="bottom" constant="29" id="J4E-n1-cIn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="AhV-oA-gg4" secondAttribute="trailing" constant="8" id="Jsw-rW-dsC"/>
+                            <constraint firstItem="Juf-RH-42a" firstAttribute="top" secondItem="AhV-oA-gg4" secondAttribute="bottom" constant="29" id="Pn7-cP-Mrb"/>
                             <constraint firstItem="hBC-co-6Kx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="R00-jC-AMp"/>
+                            <constraint firstItem="IqI-fg-lfp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Uvd-KX-ptT"/>
                             <constraint firstItem="hBC-co-6Kx" firstAttribute="top" secondItem="ay4-1M-94D" secondAttribute="bottom" constant="32" id="h7U-Jm-uUW"/>
                             <constraint firstItem="AhV-oA-gg4" firstAttribute="top" secondItem="ay4-1M-94D" secondAttribute="bottom" constant="32" id="sH0-xa-sVQ"/>
                             <constraint firstItem="ay4-1M-94D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x1z-3O-Yxn"/>
