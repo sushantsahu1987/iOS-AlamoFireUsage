@@ -20,20 +20,20 @@ class ViewController: UIViewController {
     
     
     @IBAction func onGetButtonClick(_ sender: UIButton) {
-        requestTopRatedMovies()
+        makeGetRequest()
     }
     
     
     @IBAction func onPostButtonClick(_ sender: UIButton) {
-        
+        makePostRequest()
     }
     
     
-    func requestTopRatedMovies() -> Void {
+    func makeGetRequest() -> Void {
         
         //http://localhost:3000/posts
         
-        print("request top rated movies !!")
+        print("request => Get")
         
         let url = "http://localhost:3000/posts"
         Alamofire.request(url).responseJSON{ response in
@@ -42,13 +42,23 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
-    
-    
-    
-    
-    
+    func makePostRequest() -> Void {
+        
+        print("request => Post")
+        let url = "http://localhost:3000/posts"
+        
+        let params:Parameters = [
+            "id":2,
+            "title":"Hope is a waste",
+            "author":"Sushant Sahu"
+        ]
+        
+        
+        Alamofire.request(url,method:.post,parameters:params).responseJSON {
+            response in print("response is \(response.result.value)")
+        }
+        
+    }
     
     
     
